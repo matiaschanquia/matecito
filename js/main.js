@@ -1,5 +1,5 @@
 
-var inactivo;
+var inactivo
 
 const botones = document.querySelectorAll(".boton-leer")
 const parrafos = document.querySelectorAll(".lineas-fuera")

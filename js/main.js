@@ -25,6 +25,7 @@ function cambiarLeer(index) {
 
 const botonAbrir = document.getElementById("boton-abrir")
 const botonCerrar = document.getElementById("boton-cerrar")
+const enlaces = document.querySelectorAll(".enlace")
 const nav = document.getElementById("nav-flotante")
 
 
@@ -33,5 +34,15 @@ botonAbrir.addEventListener("click", function() {
 })
 
 botonCerrar.addEventListener("click", function() {
-    nav.classList.add("display-none")
+    displayNone()
 })
+
+enlaces.forEach(enlace => {
+    enlace.addEventListener("click", function() {
+        displayNone()
+    })
+})
+
+function displayNone() {
+    nav.classList.add("display-none")
+}

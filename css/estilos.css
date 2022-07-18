@@ -212,6 +212,7 @@ body {
 
 .ubicacion {
     position: absolute;
+    text-align: right;
     text-shadow: 2px 2px 2px #000;
     right: 20px;
     bottom: 14px;

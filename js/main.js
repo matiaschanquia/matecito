@@ -22,3 +22,16 @@ function cambiarLeer(index) {
     inactivo = index
     contador += 1
 }
+
+const botonAbrir = document.getElementById("boton-abrir")
+const botonCerrar = document.getElementById("boton-cerrar")
+const nav = document.getElementById("nav-flotante")
+
+
+botonAbrir.addEventListener("click", function() {
+    nav.classList.remove("display-none")
+})
+
+botonCerrar.addEventListener("click", function() {
+    nav.classList.add("display-none")
+})

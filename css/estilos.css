@@ -112,6 +112,9 @@ body {
     z-index: 999;
     background-color: #E6B325;
     width: 100%;
+    animation-name: movimiento;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in-out;
 }
 
 .cruz {
@@ -156,6 +159,14 @@ body {
     font-weight: 900;
 }
 
+@keyframes movimiento {
+    0% {
+        transform: translateY(-100vh);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
 
 /* INICIO */
 
@@ -573,8 +584,10 @@ body {
         width: 80%;
         margin: 0 auto;
     }
+    
     .sobre {
         flex-direction: column;
+        padding: 60px 40px 0px;
     }
     .texto-sobre {
         order: -1;
@@ -611,6 +624,16 @@ body {
 }
 
 @media (max-width: 600px) {
+    .texto-sobre {
+        width: 100%;
+    }
+    .sobre {
+        padding: 60px 20px 0px;
+    }
+    .sobre > img {
+        margin-top: 20px;
+        width: 80%;
+    }
     .pasos {
         grid-template-columns: 1fr;
     }
